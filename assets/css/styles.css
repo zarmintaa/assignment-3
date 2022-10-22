@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(90deg, #031d34, #312f36, #b8ccea, #23a6d5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+.main {
+  margin: auto;
+  max-width: 1024px;
+  padding: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.center img {
+  width: 16rem;
+  height: 16rem;
+}
+
+.img-w {
+  width: 16rem;
+  height: 16rem;
+  object-position: center;
+  object-fit: contain;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
